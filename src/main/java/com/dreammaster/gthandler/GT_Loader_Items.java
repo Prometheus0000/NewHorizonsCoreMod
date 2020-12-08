@@ -405,6 +405,9 @@ public class GT_Loader_Items
 		CustomItemList.MagicianOrb.set(ItemList.MagicianOrb.getIS());
 		CustomItemList.ArchmageOrb.set(ItemList.ArchmageOrb.getIS());
 		CustomItemList.TranscendentOrb.set(ItemList.TranscendentOrb.getIS());
+		CustomItemList.EldritchOrb.set(ItemList.EldritchOrb.getIS());
+		CustomItemList.TechnoOrb.set(ItemList.TechnoOrb.getIS());
+		CustomItemList.ArmokOrb.set(ItemList.ArmokOrb.getIS());
 		CustomItemList.ArcaneSlate.set(ItemList.ArcaneSlate.getIS());
 		CustomItemList.RawOrbTier1.set(ItemList.RawOrbTier1.getIS());
 		CustomItemList.RawOrbTier2.set(ItemList.RawOrbTier2.getIS());
@@ -412,6 +415,9 @@ public class GT_Loader_Items
 		CustomItemList.RawOrbTier4.set(ItemList.RawOrbTier4.getIS());
 		CustomItemList.RawOrbTier5.set(ItemList.RawOrbTier5.getIS());
 		CustomItemList.RawOrbTier6.set(ItemList.RawOrbTier6.getIS());
+		CustomItemList.RawOrbTier7.set(ItemList.RawOrbTier7.getIS());
+		CustomItemList.RawOrbTier8.set(ItemList.RawOrbTier8.getIS());
+		CustomItemList.RawOrbTier9.set(ItemList.RawOrbTier9.getIS());
 		CustomItemList.TeleposerFrame.set(ItemList.TeleposerFrame.getIS());
 		CustomItemList.MysteriousCrystal.set(ItemList.MysteriousCrystal.getIS());
 		CustomItemList.WoodenCasing.set(ItemList.WoodenCasing.getIS());
