@@ -49,20 +49,20 @@ public class OreDictHandler {
 		reg_dust(OreDictTypes.Venus.name(),ItemList.VenusStoneDust.getIS());
 		
 		if(Loader.isModLoaded("GalaxySpace")) {
-		reg_dust(OreDictTypes.Enceladus.name(),GT_ModHandler.getModItem("GalaxySpace", "item.GlowstoneDusts", 1L,2));
-		reg_dust(OreDictTypes.Io.name(),GT_ModHandler.getModItem("GalaxySpace", "item.GlowstoneDusts", 1L,1));
-		reg_dust(OreDictTypes.Pluto.name(),GT_ModHandler.getModItem("GalaxySpace", "item.GlowstoneDusts", 1L,4));
-		reg_dust(OreDictTypes.Proteus.name(),GT_ModHandler.getModItem("GalaxySpace", "item.GlowstoneDusts", 1L,3));
-		reg_dust(OreDictTypes.Ceres.name(),GT_ModHandler.getModItem("GalaxySpace", "item.GlowstoneDusts", 1L));
+			reg_dust(OreDictTypes.Ceres.name(),GT_ModHandler.getModItem("GalaxySpace", "item.GlowstoneDusts", 1L, 0));
+			reg_dust(OreDictTypes.Io.name(),GT_ModHandler.getModItem("GalaxySpace", "item.GlowstoneDusts", 1L ,1));
+			reg_dust(OreDictTypes.Enceladus.name(),GT_ModHandler.getModItem("GalaxySpace", "item.GlowstoneDusts", 1L, 2));
+			reg_dust(OreDictTypes.Proteus.name(),GT_ModHandler.getModItem("GalaxySpace", "item.GlowstoneDusts", 1L, 3));
+			reg_dust(OreDictTypes.Pluto.name(),GT_ModHandler.getModItem("GalaxySpace", "item.GlowstoneDusts", 1L, 4));
 		}
 	}
 	
 	public static void register_space_rocks() {
-		if(Loader.isModLoaded("GalacticraftCore"))
+		if (Loader.isModLoaded("GalacticraftCore"))
 			for (int i=3; i<6;i++)
 				reg_rock(OreDictTypes.Moon.name(),GT_ModHandler.getModItem("GalacticraftCore", "tile.moonBlock", 1L, i));
 		
-		if(Loader.isModLoaded("GalacticraftMars")) {
+		if (Loader.isModLoaded("GalacticraftMars")) {
 			for (int i=4; i<7;i++)
 				reg_rock(OreDictTypes.Mars.name(),GT_ModHandler.getModItem("GalacticraftMars", "tile.mars", 1L, i));
 			
@@ -72,7 +72,7 @@ public class OreDictHandler {
 			reg_rock(OreDictTypes.Mars.name(),GT_ModHandler.getModItem("GalacticraftMars", "tile.mars", 1L, 9));
 		}		
 		
-		if(Loader.isModLoaded("GalaxySpace")) {
+		if (Loader.isModLoaded("GalaxySpace")) {
 			for (int i=0; i<5;i++)
 				reg_rock(OreDictTypes.Pluto.name() + "Ice",GT_ModHandler.getModItem("GalaxySpace", "plutoblocks", 1L, i));
 				
@@ -124,16 +124,16 @@ public class OreDictHandler {
 	}
 		
 	public static void reg_additional() {
-		if(Loader.isModLoaded("GalacticraftCore"))
+		if (Loader.isModLoaded("GalacticraftCore"))
 			OreDictionary.registerOre(OreDictTypes.Moon.name() + "DungeonBrick", GT_ModHandler.getModItem("GalacticraftCore", "tile.moonBlock", 1L, 14));
 		
-		if(Loader.isModLoaded("GalacticraftMars"))
+		if (Loader.isModLoaded("GalacticraftMars"))
 			OreDictionary.registerOre(OreDictTypes.Mars.name() + "DungeonBrick", GT_ModHandler.getModItem("GalacticraftMars", "tile.mars", 1L, 7));
 		
-		if(Loader.isModLoaded("GalaxySpace")) {
+		if (Loader.isModLoaded("GalaxySpace")) {
 			for (int i = 0; i<6; i++) {
-				OreDictionary.registerOre("cropSpace", GT_ModHandler.getModItem("GalaxySpace", "tcetiedandelions", 1L,i));
-				OreDictionary.registerOre("cropTcetiESeaweed", GT_ModHandler.getModItem("GalaxySpace", "tcetiedandelions", 1L,i));
+				OreDictionary.registerOre("cropSpace", GT_ModHandler.getModItem("GalaxySpace", "tcetiedandelions", 1L, i));
+				OreDictionary.registerOre("cropTcetiESeaweed", GT_ModHandler.getModItem("GalaxySpace", "tcetiedandelions", 1L, i));
 			}
 			
 			OreDictionary.registerOre(OreDictTypes.Ceres.name() + "DungeonBrick", GT_ModHandler.getModItem("GalaxySpace", "ceresblocks", 1L, 2));
@@ -142,6 +142,18 @@ public class OreDictHandler {
 			OreDictionary.registerOre(OreDictTypes.Proteus.name() + "DungeonBrick", GT_ModHandler.getModItem("GalaxySpace", "proteusblocks", 1L, 3));
 			OreDictionary.registerOre(OreDictTypes.Pluto.name() + "DungeonBrick", GT_ModHandler.getModItem("GalaxySpace", "plutoblocks", 1L, 6));
 		}
+		
+		OreDictionary.registerOre("blockClay", GT_ModHandler.getModItem("minecraft", "clay", 1L, 0));
+		OreDictionary.registerOre("blockIce", GT_ModHandler.getModItem("minecraft", "ice", 1L, 0));
+		
+		if (Loader.isModLoaded("appliedenergistics2"))
+			OreDictionary.registerOre("blockSkystone", GT_ModHandler.getModItem("appliedenergistics2", "tile.BlockSkyStone", 1L, 0));
+		
+		if (Loader.isModLoaded("Railcraft")) {
+			OreDictionary.registerOre("blockAbyssal", GT_ModHandler.getModItem("Railcraft", "cube", 1L, 6));
+			OreDictionary.registerOre("blockQuarried", GT_ModHandler.getModItem("Railcraft", "cube", 1L, 7));
+		}
+			
 		OreDictionary.registerOre("foodSalt", ItemList.EdibleSalt.getIS());
 
 		//Olivine = Peridot
