@@ -97,9 +97,9 @@ public class GT_CraftingRecipeLoader extends gregtech.loaders.postload.GT_Crafti
         GT_ModHandler.addCraftingRecipe(ItemList.LargeHPSteamTurbine.get(1L), bits, new Object[]{"CPC", "PMP", "BPB", 'M', ItemList.Hull_IV, 'B', OrePrefixes.pipeLarge.get(Materials.TungstenSteel), 'C', OrePrefixes.circuit.get(Materials.Master), 'P', OrePrefixes.gearGt.get(Materials.TungstenSteel)});
         GT_ModHandler.addCraftingRecipe(ItemList.LargePlasmaTurbine.get(1L), bits, new Object[]{"CPC", "PMP", "BPB", 'M', ItemList.Hull_UV, 'B', OrePrefixes.pipeHuge.get(Materials.Naquadah), 'C',  OrePrefixes.circuit.get(Materials.Ultimate), 'P', OrePrefixes.gearGt.get(Materials.NaquadahAlloy)});
 
-        GT_ModHandler.addCraftingRecipe(CustomItemList.Casing_AirFilter_Vent.get(1L), bits, new Object[]{"ThT", "TFT", "TwT", 'T', CustomItemList.TitaniumBars, 'F', OrePrefixes.frameGt.get(Materials.Steel)});
-        GT_ModHandler.addCraftingRecipe(CustomItemList.Casing_AirFilter_Turbine.get(1L), bits, new Object[]{"SSS", "RVR", "MSM", 'V', CustomItemList.Casing_AirFilter_Vent, 'S', OrePrefixes.stickLong.get(Materials.Titanium), 'R', OrePrefixes.rotor.get(Materials.Titanium), 'M', ItemList.Electric_Motor_EV, 'R', OrePrefixes.screw.get(Materials.Titanium)});
-        GT_ModHandler.addCraftingRecipe(CustomItemList.Machine_Multi_AirFilter.get(1L), bits, new Object[]{"RPR", "MBM", "CGC", 'B', ItemList.Hull_EV, 'R', OrePrefixes.rotor.get(Materials.Titanium), 'P',  ItemList.Electric_Pump_EV, 'M', ItemList.Electric_Motor_EV, 'C', OrePrefixes.cableGt01.get(Materials.Titanium), 'G', ItemList.Casing_Turbine2});
+        GT_ModHandler.addCraftingRecipe(CustomItemList.Casing_AirFilter_Vent.get(1L), bits, new Object[]{"ThT", "TFT", "TwT", 'T', CustomItemList.StainlessSteelBars, 'F', OrePrefixes.frameGt.get(Materials.Steel)});
+        GT_ModHandler.addCraftingRecipe(CustomItemList.Casing_AirFilter_Turbine.get(1L), bits, new Object[]{"SSS", "RVR", "MSM", 'V', CustomItemList.Casing_AirFilter_Vent, 'S', OrePrefixes.stickLong.get(Materials.StainlessSteel), 'R', OrePrefixes.rotor.get(Materials.StainlessSteel), 'M', ItemList.Electric_Motor_HV, 'R', OrePrefixes.screw.get(Materials.StainlessSteel)});
+        GT_ModHandler.addCraftingRecipe(CustomItemList.Machine_Multi_AirFilter.get(1L), bits, new Object[]{"RPR", "MBM", "CGC", 'B', ItemList.Hull_HV, 'R', OrePrefixes.rotor.get(Materials.StainlessSteel), 'P',  ItemList.Electric_Pump_HV, 'M', ItemList.Electric_Motor_HV, 'C', OrePrefixes.cableGt01.get(Materials.Gold), 'G', ItemList.Casing_Turbine1});
 
         GT_ModHandler.addCraftingRecipe(CustomItemList.Casing_Pyrolyse.get(1L), bits, new Object[]{"PhP", "SFS", "PwP", 'P', OrePrefixes.plate.get(Materials.Steel), 'S', OrePrefixes.plate.get(Materials.Iron), 'F', ItemList.Casing_BronzePlatedBricks});
 
@@ -136,7 +136,7 @@ public class GT_CraftingRecipeLoader extends gregtech.loaders.postload.GT_Crafti
         GT_ModHandler.addCraftingRecipe(ItemList.Casing_Tank_7.get(1L), bits, new Object[]{"PPP", "PIP", "PPP", 'P', OrePrefixes.plate.get(Materials.Iridium), 'I', OrePrefixes.pipeLarge.get(Materials.NiobiumTitanium)});
         GT_ModHandler.addCraftingRecipe(ItemList.Casing_Tank_8.get(1L), bits, new Object[]{"PPP", "PIP", "PPP", 'P', OrePrefixes.plate.get(Materials.Osmium), 'I', OrePrefixes.pipeLarge.get(Materials.Enderium)});
         GT_ModHandler.addCraftingRecipe(ItemList.Casing_Tank_9.get(1L), bits, new Object[]{"PPP", "PIP", "PPP", 'P', OrePrefixes.plate.get(Materials.Neutronium), 'I', OrePrefixes.pipeLarge.get(Materials.Naquadah)});
-        GT_ModHandler.addCraftingRecipe(ItemList.Casing_Tank_10.get(1L), bits, new Object[]{"PPP", "PIP", "PPP", 'P', CustomItemList.BedrockiumPlate, 'I', OrePrefixes.pipeLarge.get(Materials.MysteriousCrystal)});
+        GT_ModHandler.addCraftingRecipe(ItemList.Casing_Tank_10.get(1L), bits, new Object[]{"PPP", "PIP", "PPP", 'P', OrePrefixes.plate.get(Materials.Bedrockium), 'I', OrePrefixes.pipeLarge.get(Materials.MysteriousCrystal)});
 
         GT_ModHandler.addCraftingRecipe(ItemList.Field_Generator_LV.get(1L), GT_ModHandler.RecipeBits.DISMANTLEABLE | GT_ModHandler.RecipeBits.NOT_REMOVABLE | GT_ModHandler.RecipeBits.REVERSIBLE, new Object[]{"WCW", "CGC", "WCW", 'G', OrePrefixes.plate.get(Materials.EnderPearl), 'C', OrePrefixes.circuit.get(Materials.Advanced), 'W', OrePrefixes.plate.get(Materials.RedSteel)});
         GT_ModHandler.addCraftingRecipe(ItemList.Field_Generator_MV.get(1L), GT_ModHandler.RecipeBits.DISMANTLEABLE | GT_ModHandler.RecipeBits.NOT_REMOVABLE | GT_ModHandler.RecipeBits.REVERSIBLE, new Object[]{"WCW", "CGC", "WCW", 'G', OrePrefixes.plate.get(Materials.EnderEye), 'C', OrePrefixes.circuit.get(Materials.Data), 'W', OrePrefixes.plate.get(Materials.TungstenSteel)});
@@ -291,7 +291,9 @@ public class GT_CraftingRecipeLoader extends gregtech.loaders.postload.GT_Crafti
 
         GT_ModHandler.addCraftingRecipe(CustomItemList.NeutronReflectorSmallParts.get(1L), GT_Proxy.tBits, new Object[]{"NNN", "NwN", 'N', GT_ModHandler.getModItem("IC2", "reactorReflector", 1L, 1)});
 
-         if (Loader.isModLoaded("GraviSuite")) {
+        GT_ModHandler.addCraftingRecipe(GT_OreDictUnificator.get(OrePrefixes.toolHeadHoe, Materials.Steel, 1L), GT_Proxy.tBits, new Object[]{"PIh", "f  ", 'P', OrePrefixes.plate.get(Materials.Steel), 'I', OrePrefixes.ingot.get(Materials.Steel)});
+
+        if (Loader.isModLoaded("GraviSuite")) {
             GT_ModHandler.removeRecipeByOutput(GT_ModHandler.getModItem("GraviSuite", "itemSimpleItem", 1, 3));
             GT_ModHandler.addCraftingRecipe(GT_ModHandler.getModItem("GraviSuite", "itemSimpleItem", 1, 3), new Object[]{"OCO", "XWX", "OCO", 'C', OrePrefixes.wireGt12.get(Materials.SuperconductorLuV), 'X',  GT_ModHandler.getModItem("GraviSuite", "itemSimpleItem", 1, 2), 'O', GT_ModHandler.getModItem("IC2", "blockMachine2", 1, 1), 'W', ItemList.Transformer_LuV_IV.get(1, o)});
         }
